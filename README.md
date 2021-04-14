@@ -24,13 +24,13 @@ o	Sử dụng git merge: git merge <nhánh_mới>
 o	Sử dụng git rebase: git rebase <nhánh_mới>
 -	Phân biệt git merge & git rebase:
 o	Đối với git merge: 
-	Thực hiện bằng cách so sánh giữa điểm rẽ nhánh (commit cơ sở chung giữa các nhánh) và commit cuối của các nhánh cần gộp rồi gộp thành 1 commit tổng hợp (có xử lý xung đột)
-	Các commit sau khi gộp vào vân được sắp xếp theo thời gian của các commit rẽ nhánh 
-	Viết bằng merge thì lưu vết cũng như bảo toàn history của respoitory (ví dụ: xem được commit này từ branch nào,…), tránh việc rewrite lại các thay đổi.
++	Thực hiện bằng cách so sánh giữa điểm rẽ nhánh (commit cơ sở chung giữa các nhánh) và commit cuối của các nhánh cần gộp rồi gộp thành 1 commit tổng hợp (có xử lý xung đột)
++	Các commit sau khi gộp vào vân được sắp xếp theo thời gian của các commit rẽ nhánh 
++	Viết bằng merge thì lưu vết cũng như bảo toàn history của respoitory (ví dụ: xem được commit này từ branch nào,…), tránh việc rewrite lại các thay đổi.
 o	Đối với git rebase: 
-	Thực hiện bằng cách lấy tất cả các commit của nhánh mới làm commit cơ sở của nhánh gốc rồi đi sau đó là các commit riêng của nhánh gốc
-	Trong trường hợp xảy ra xung đột giữa điểm tiếp nối commit cơ sở và commit riêng của nhánh gốc thì sẽ xử lý bằng cách viết lại commit riêng đó.
-	Viết bằng rebase thì sẽ có 1 history rõ rang, dễ nhìn, hay còn gọi là linear history, tránh được trường hợp có thêm các merge commit.
++	Thực hiện bằng cách lấy tất cả các commit của nhánh mới làm commit cơ sở của nhánh gốc rồi đi sau đó là các commit riêng của nhánh gốc
++	Trong trường hợp xảy ra xung đột giữa điểm tiếp nối commit cơ sở và commit riêng của nhánh gốc thì sẽ xử lý bằng cách viết lại commit riêng đó.
++	Viết bằng rebase thì sẽ có 1 history rõ rang, dễ nhìn, hay còn gọi là linear history, tránh được trường hợp có thêm các merge commit.
 6.	Git tag, release
 -	Git tag để đánh dấu 1 điểm trong lịch sử commit, thường là các commit đặc biệt, để dễ dàng lấy lại phiên bản cũ hơn
 -	Tạo 1 tag mới đánh dấu vào commit: 
